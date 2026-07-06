@@ -2,12 +2,12 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from torch.utils.data import DataLoader
 from peft import PeftModel
-from qlora_demo.data_utils import prepare_dataset
+from lora_demo.data_utils import prepare_dataset
 
 # Device selection: MPS if available, otherwise CPU.
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 MODEL_ID = "distilgpt2"
-OUTPUT_DIR = "qlora_adapter"
+OUTPUT_DIR = "lora_adapter"
 EVAL_DATA_PATH = "dataset/eval.jsonl"
 BATCH_SIZE = 4
 

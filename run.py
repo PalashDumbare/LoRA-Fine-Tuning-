@@ -1,11 +1,11 @@
 """Simple launcher for training, evaluation, or inference."""
 
-from qlora_demo.train import train
-from qlora_demo.eval import main as eval_main
-from qlora_demo.inference import build_model, generate_samples
+from lora_demo.train import train
+from lora_demo.eval import main as eval_main
+from lora_demo.inference import build_model, generate_samples
 
 
-class QLoRAApp:
+class LoRAApp:
     def __init__(self):
         self.actions = {
             "train": self.run_train,
@@ -41,4 +41,4 @@ class QLoRAApp:
 
 
 if __name__ == "__main__":
-    QLoRAApp().run()
+    LoRAApp().run()

@@ -30,19 +30,19 @@ Then choose one of:
 4) Train the adapter using the package module:
 
 ```bash
-python3 -m qlora_demo.train
+python3 -m lora_demo.train
 ```
 
 5) Evaluate the saved adapter on held-out data:
 
 ```bash
-python3 -m qlora_demo.eval
+python3 -m lora_demo.eval
 ```
 
 6) Run inference after training:
 
 ```bash
-python3 -m qlora_demo.inference
+python3 -m lora_demo.inference
 ```
 
 

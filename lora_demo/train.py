@@ -1,13 +1,13 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
 from peft import LoraConfig, get_peft_model
-from qlora_demo.data_utils import prepare_dataset
+from lora_demo.data_utils import prepare_dataset
 
 # Choose the device: MPS on Apple Silicon, otherwise CPU.
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 # Base model name and output folder for adapters.
 MODEL_ID = "distilgpt2"
-OUTPUT_DIR = "qlora_adapter"
+OUTPUT_DIR = "lora_adapter"
 
 
 def build_model():
