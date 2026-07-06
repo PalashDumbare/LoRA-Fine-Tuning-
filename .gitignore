@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.venv/
+
+# Model artifacts and cache
+qlora_adapter/
+training_output/
+.transformers/
+.cache/
